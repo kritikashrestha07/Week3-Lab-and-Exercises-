@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register Page</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>User Registration</h1>
+    <button id="themeToggle">🌙 Dark Mode</button>
+  </header>
+
+  <main>
+
+    <!-- FORM SECTION -->
+    <section class="form-section">
+
+      <h2>Create Your Account</h2>
+
+      <form id="registerForm">
+
+        <!-- Full Name -->
+        <div class="input-group">
+          <label>Full Name</label>
+          <input type="text" id="fullName">
+          <small class="error" id="nameError"></small>
+        </div>
+
+        <!-- Email -->
+        <div class="input-group">
+          <label>Email Address</label>
+          <input type="email" id="email">
+          <small class="error" id="emailError"></small>
+        </div>
+
+        <!-- Password -->
+        <div class="input-group password-box">
+          <label>Password</label>
+
+          <div class="password-wrapper">
+            <input type="password" id="password">
+            <span class="toggle" id="togglePass">👁</span>
+          </div>
+
+          <small class="error" id="passError"></small>
+        </div>
+
+        <!-- Confirm Password -->
+        <div class="input-group password-box">
+          <label>Confirm Password</label>
+
+          <div class="password-wrapper">
+            <input type="password" id="confirmPassword">
+            <span class="toggle" id="toggleConfirm">👁</span>
+          </div>
+
+          <small class="error" id="confirmError"></small>
+        </div>
+
+        <!-- Submit -->
+        <button type="submit">Register</button>
+
+        <!-- Success Message -->
+        <p id="formSuccess"></p>
+
+      </form>
+
+    </section>
+
+  </main>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>

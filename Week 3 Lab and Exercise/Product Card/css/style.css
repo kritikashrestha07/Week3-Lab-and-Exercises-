@@ -1,0 +1,175 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Light Theme Default */
+body {
+  background: #f4f6ff;
+  color: #222;
+  transition: 0.3s;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+header button {
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  background: #222;
+  color: white;
+}
+
+/* Layout */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  padding: 40px;
+}
+
+/* Product Card */
+.product-card {
+  width: 300px;
+  background: white;
+  padding: 20px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 15px 0;
+  color: #2c3eff;
+}
+
+.product-card button {
+  padding: 12px 20px;
+  border: none;
+  background: #2c3eff;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#cartMessage {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Form Section */
+.form-section {
+  width: 350px;
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.input-group {
+  margin-bottom: 18px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+}
+
+input:focus {
+  border-color: #2c3eff;
+}
+
+.error {
+  color: red;
+  font-size: 13px;
+}
+
+/* Invalid Input Highlight */
+.invalid {
+  border-color: red;
+}
+
+/* Password Toggle */
+.password-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.toggle {
+  margin-left: -30px;
+  cursor: pointer;
+}
+
+/* Submit Button */
+form button {
+  width: 100%;
+  padding: 12px;
+  background: #2c3eff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Success Message */
+#formSuccess {
+  margin-top: 15px;
+  font-weight: bold;
+  color: green;
+}
+
+/* DARK MODE */
+.dark {
+  background: #121212;
+  color: white;
+}
+
+.dark header,
+.dark .product-card,
+.dark .form-section {
+  background: #1f1f1f;
+  color: white;
+}
+
+.dark input {
+  background: #2a2a2a;
+  color: white;
+  border-color: gray;
+}
+
+.dark button {
+  background: #ff9800;
+}
+
+/* PRODUCTS GRID */
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
